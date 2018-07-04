@@ -1,2 +1,2 @@
-# https://cdps.github.io
+#cdps
 my personal web
