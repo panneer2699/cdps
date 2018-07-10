@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" charset="width=device-width, initial-scale=1.0" >
 <head>
-	<link rel="shortcut icon"href="ic.ico"type="image/x-icon"/>
+	
 	<title>Home|M</title>
 	<style type="text/css">
 	*{
@@ -10,7 +11,9 @@
 	     color: white;}
 
 		ul{
-	
+	position: fixed;
+    width: 100%;
+    top: 0;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,7 +32,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 li a:hover {
@@ -39,38 +42,14 @@ body{
 	background-color: black;
 }
 h5{
-	font-size: 50px;
+	font-size: 3.5vw;
 }
-}
-.cont{
-   width: 50%;
-}
-.hv2{
 
-     
-     opacity: 0;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%,-50%);
+.cont{
+   width: 100%;
 }
 .hv{
-	opacity: 1;
-	display: block;
 	width: 100%;
-	height: auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
-
-}
-.cont:hover .hv{
-	opacity: 0;
-}
-.cont:hover .hv2{
-	opacity: 1;
-}
-.mycls{
-
 }
 .ok{
  float:left;
@@ -99,29 +78,24 @@ h2{
 	font-size: 80px;
 	color:white;
 }
-.edu{
 
-}
 .border
             {
 
-			 border:3px solid;
-			 margin: 250px 250px 0 50px;
 			background-color: white;
-			opacity: 0.8;
-			 border-color:blue;
-			 border-radius: 35px;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                
 			}
-.card{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card1{
 	transition: 0.3s;
-	width: 210px;
+	width: 50%;
 	border-radius: 25px;
 	background-color: linen;
-}
-.card:hover{
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-
+	float: right; 
+	border: 1px solid white; 
+	margin: 0px 200px 0 0;
 }
 .container{
 	padding: 2px 16px;
@@ -129,8 +103,11 @@ h2{
 p{
 	color: black;
 }
-
-
+@media screen and (max-width: 800px){
+	.card{
+		width: 80%;
+	}
+}
 
 
 	</style>
@@ -139,13 +116,11 @@ p{
 	<div style="border: 3px solid black;">
 		<ul >
 			<li><a href="ps.pdf">Resume</a></li>
-			
-			<li><a href="">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 		</ul>
 	</div>
 	<div class="cont">
-	<img src="bg3.jpg" style="width: 1345px" class="hv">
-	<img src="bg1.jpg" style="width: 1345px" class="hv2">
+	<img src="b.gif" class="hv">
 </div>
 <b><i><h2 class="yt">Thanks for visiting....</h2></i></b>
 <div class="mycls">
@@ -153,76 +128,48 @@ p{
 	        Hi there...
 	   here is my web about me
            <b>  I am <i>Panneerselvam D</i></b>
-</pre><br><br><br><br><br><br><br></h3>
+</pre><br><br><br><br><br></h3>
 </h6></div>
 <hr><hr>
-     <div class="edu">
-	<center><i><h2>EDUCATION</h2></i></center>
-		<hr><br><br><br><br><br><br>
-
-	<div style="display: inline;">
-		<div class="card" style="float: right; border: 1px solid white; margin: 0px 200px 0 0">
-			<img src="scl.jpg" height="200px" width="200px" style="border-radius: 25px">
-			<div class="container">
-				
-				<p>SSLC<br>Bharathi Balamandir<br>HR Sec School</p>
-			</div></div>
-		<div class="card" style="float: right; border: 1px solid white; margin: 0px 200px 0 0" >
-			<img src="scl.jpg" height="200px" width="200px"  style="border-radius: 25px" >
-			<div class="container">
-				
-				<p>HSC<br>Bharathi Balamandir<br> HR Sec School</p>
-			</div></div>
-		<div class="card" style="float: right; border: 1px solid white; margin: 0px 200px 0 0" >
-			<img src="ksr.jpg" height="200px" width="200px"  style="border-radius: 25px; text-align:center;" >
-			<div class="container"><br>
-				<p>B.E (CSE)<br>K.S.R<br>College of engineering</p>
-			</div>
-		</div></div><br><br></div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr><hr>
+    
 <center><b><h2><i>INTRESTS</i></h2></b></center><hr>
 <br><br>
 <div>
 	<h5><img src="int.jpg" height="500px" width="300px" style="float: right;"><br><br>Reading Tamil Novels<br>
-		Writting Tamil scripts<br> Web developing<br>Application development<br><br><br><br></h5>
+		Writting Tamil scripts<br> Web developing<br>Application development<br><br><br><br><br><br></h5>
 </div>
 <hr><hr>
 <center><b><i><h2>Writting</h2></i></b></center><hr>
 <br><br>
 <div>
-	<h5><img src="kav.jpg" height="500px" width="400px" style="float: left;"><br><br><br> &nbsp; &nbsp; &nbsp; Writting makes me pleassure and help to improve my imagination,especially in mother language scripts.So only i like and love to write scripts</h5>
+	<h5><img src="kav.jpg" height="500px" width="400px" style="float: left;"><br><br><br> &nbsp; &nbsp; &nbsp; Writting makes me pleassure and help to improve my imagination,especially in mother language scripts.So only I like and love to write scripts</h5>
 
-	<br><br><br><br><br><br>
+	<br><br><br><br><br><br><br>
 </div>
 <hr><hr>
 <center><b><i><h2>Skills</h2></i></b></center><hr>
 <div>
-	<h5><img src="prog.png" height="500px" width="600px" style="float: right;"><br><br>&nbsp; &nbsp; Basic knowledge in<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;C programming<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;C++<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;JAVA<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;HTML and CSS</h5>
-          
+	<h5><img src="prog.png" width="50%" style="float: right;"><br><br>&nbsp; &nbsp; Basic knowledge in<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;C programming<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;C++<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;JAVA<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;HTML and CSS</h5>
 	<br><br><br><br><br><br>
 </div>
 <hr><hr>
 <div >
-	<h2>
+	<h2 style="font-size: 3vw">
 		<pre>
 தோன்றின் புகழோடு தோன்றுக அஃதிலார்
 தோன்றலின் தோன்றாமை நன்று
 			         -வள்ளுவர்
-
 		</pre>
-		
 		<pre>
 <q>for Every success,there is a way
 if there is no way, I wil make it..</q>
 			    -Alexander The Great
 		</pre>
 	</h2>
-
+    <br><br>
 </div>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h5>to contact:</h5>
 <div class="border">
-	<center>
+    	<center>
 <a href="tel:+91-9442897408" target=_blank><img src="ph.gif"></a>
 <a href="https://api.whatsapp.com/send?phone=919442897408" target=_blank><img src="wa.gif" class="img"></a>
 <a href="https://www.facebook.com/panneer.panther" target=_blank><img src="fb.gif" class="img"></a>
